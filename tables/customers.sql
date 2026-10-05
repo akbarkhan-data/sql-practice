@@ -1,0 +1,6 @@
+CREATE TABLE dbo.Customers (
+    CustomerID INT IDENTITY(1,1) PRIMARY KEY,
+    FullName   NVARCHAR(100) NOT NULL,
+    Email      NVARCHAR(150) NULL,
+    CreatedAt  DATETIME2 NOT NULL DEFAULT SYSDATETIME()
+);
