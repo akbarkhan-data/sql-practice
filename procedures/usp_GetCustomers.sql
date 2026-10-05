@@ -5,5 +5,5 @@ BEGIN
     SET NOCOUNT ON;
     SELECT CustomerID, FullName, Email, CreatedAt
     FROM dbo.Customers
-    WHERE @Email IS NULL OR Email = @Email;
+    WHERE @Email IS NULL OR Email = @Email ORDER BY CreatedAt DESC;
 END;
